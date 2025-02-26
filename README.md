@@ -34,4 +34,4 @@ Regression
 
 ## Cover Image
 
-![](CoverImage/Image.png)
+![](CoverImage/Image.PNG)
