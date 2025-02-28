@@ -17,7 +17,9 @@ Der Code führt folgende Analysen durch:
 Grundlegende Dateninspektion:
 
 df.info() - Überblick über Datentypen und fehlende Werte
+
 df.describe() - Statistische Zusammenfassung der numerischen Variablen
+
 df.head() - Anzeigen der ersten Zeilen des Datensatzes
 
 
@@ -31,6 +33,7 @@ Korrelationsanalyse:
 Berechnung und Sortierung der Korrelationen zwischen Umsatz und allen anderen Variablen
 
 Haupterkenntnisse
+
 Basierend auf der Korrelationsanalyse haben folgende Faktoren den größten positiven Einfluss auf den Umsatz:
 
 Sommerferien in Schleswig-Holstein (0,23)
@@ -50,6 +53,9 @@ Monat (Kosinus-Transformation) (-0,21)
 Wochentag (Sinus-Transformation) (-0,14)
 
 Monat (Sinus-Transformation) (-0,13)
+
+
+
 
 1. BETRACHTUNG DER BUNDESLÄNDER UND FERIEN (Betreff Datei: "Ferien_D_Variable.ipynb")
 
@@ -143,6 +149,8 @@ Für die Ausführung des Projekts werden folgende Python-Pakete benötigt:
     Pandas: Für die Datenmanipulation und Aggregation.
     Matplotlib: Für die Visualisierung der Ergebnisse.
     Scipy: Für statistische Tests und Berechnungen der Konfidenzintervalle.
+
+    
 
 
 2. BETRACHTUNG der HEIMSPIELTAGE VON HOLSTEIN KIEL UND TAGEN OHNE SPIELE (Betreff Ordner: "Data Analysis")
