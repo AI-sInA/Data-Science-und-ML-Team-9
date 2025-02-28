@@ -2,6 +2,11 @@
 
 0. siehe Ordner "0_DataPreparation"
 
+
+
+
+
+
 1. BETRACHTUNG DER BUNDESLÄNDER UND FERIEN (Betreff Datei: Ferien_D_Variable.ipynb)
 
 Umsatzanalyse in Abhängigkeit der Ferien pro Bundesland
