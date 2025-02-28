@@ -225,28 +225,6 @@ Der p-Wert (0.0043) ist kleiner als 0.05, was darauf hinweist, dass es signifika
 
 Der Tukey HSD-Test führt paarweise Vergleiche durch, um zu ermitteln, zwischen welchen Warengruppen signifikante Unterschiede bestehen. Hier sind Beispielergebnisse aus dem Tukey HSD-Test:
 
-Tukey-HSD-Ergebnisse:
-   Multiple Comparison of Means - Tukey HSD, FWER=0.05   
-=========================================================
-group1 group2  meandiff p-adj    lower     upper   reject
----------------------------------------------------------
-     1      2  280.3554    0.0  272.2095  288.5013   True
-     1      3   41.1984    0.0   33.0525   49.3443   True
-     1      4  -34.1885    0.0  -42.3952  -25.9817   True
-     1      5   154.653    0.0  146.5071  162.7989   True
-     1      6  -55.2259    0.0  -70.7132  -39.7386   True
-     2      3  -239.157    0.0 -247.3029 -231.0111   True
-     2      4 -314.5439    0.0 -322.7506 -306.3371   True
-     2      5 -125.7024    0.0 -133.8483 -117.5565   True
-     2      6 -335.5813    0.0 -351.0686  -320.094   True
-     3      4  -75.3869    0.0  -83.5936  -67.1801   True
-     3      5  113.4546    0.0  105.3087  121.6005   True
-     3      6  -96.4243    0.0 -111.9116   -80.937   True
-     4      5  188.8415    0.0  180.6347  197.0482   True
-     4      6  -21.0374 0.0016  -36.5568    -5.518   True
-     5      6 -209.8789    0.0 -225.3662 -194.3916   True
----------------------------------------------------------
-
 Der Tukey HSD-Test zeigt, dass es signifikante Unterschiede zwischen den Warengruppen gibt, was durch das reject-Label in der Spalte reject angezeigt wird.
 
 5. Visualisierung der Ergebnisse
