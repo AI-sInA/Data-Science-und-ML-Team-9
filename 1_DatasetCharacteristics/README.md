@@ -8,6 +8,7 @@ Datensatzübersicht
 Der Datensatz enthält 9.334 Einträge mit 55 Spalten und umfasst folgende Hauptkategorien:
 
 Zielgröße: Umsatz
+
 Variablen siehe Ordner "0.DataPreparation"
 
 Funktionalitäten
