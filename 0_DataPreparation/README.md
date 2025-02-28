@@ -1,7 +1,6 @@
-# Data Preparation
+## Data Preparation
 
-Diese Data Preparation dient der Vorverarbeitung und Modellierung von Umsatzdaten in Verbindung mit Wetterdaten, saisonalen Informationen und anderen relevanten Faktoren. Der Code führt mehrere Schritte durch, einschließlich Datenvorbereitung, Feature Engineering und Transformation, und bereitet die Daten für maschinelles Lernen vor.
-
+This data preparation is used to pre-process and model sales data in conjunction with weather data, seasonal information and other relevant factors. The code performs several steps, including data preparation, feature engineering and transformation, and prepares the data for machine learning.
 Voraussetzungen
 
     Python 3.x
@@ -9,43 +8,46 @@ Voraussetzungen
     NumPy
     Scikit-learn
 
-Datenquelle
+## Data sources
 
-Der Code verarbeitet mehrere CSV-Dateien, die unterschiedliche Datensätze enthalten:
+The code processes several CSV files that contain different data records:
 
-    umsatzdaten_gekuerzt.csv: Basisdatensatz mit den Umsatzdaten.
-    wetter.csv: Wetterdaten, die Temperatur, Bewölkung, Windgeschwindigkeit und weitere Wetterinformationen enthalten.
-    kiwo.csv: Daten zur Kieler Woche.
-    Feier_Bruecke_Ferien_bis2018.csv: Feiertage, Brückentage und Schulferien.
-    VPI.csv: Verbraucherpreisindex-Daten.
-    EPI.csv: Erzeugerpreisindex-Daten.
-    Heimspiel_Holstein_Kiel_finle.csv: Daten zu den Heimspielen von Holstein Kiel.
-    Kieler_Umschlag_finale.csv: Daten zum Fest „Kieler Umschlag“.
-    Schulferien_Litauen_finale.csv: Schulferien in Litauen.
+    umsatzdaten_gekuerzt.csv: Basic data set with sales data.
+    wetter.csv: Weather data containing temperature, cloud cover, wind speed and other weather information.
+    kiwo.csv: Data on Kieler Woche.
+    Feier_Bruecke_Ferien_bis2018.csv: Public holidays, bridging days and school holidays.
+    VPI.csv: Consumer price index data.
+    EPI.csv: Producer price index data.
+    Heimspiel_Holstein_Kiel_finle.csv: Data on the home matches of Holstein Kiel.
+    Kieler_Umschlag_finale.csv: Data on the ‘Kieler Umschlag’ festival.
+    Schulferien_Litauen_finale.csv: School holidays in Lithuania.
 
-Code-Erklärung
-Datenvorverarbeitung
+## Code Description
 
-    Die CSV-Dateien werden mit pandas.read_csv() geladen und mit merge() auf Grundlage der Datum-Spalte zusammengeführt.
-    Die Spalte Datum wird in das datetime-Format konvertiert, um Zeitbasierte Features zu extrahieren.
-    Fehlende Werte werden in verschiedenen Spalten behandelt:
-        Für numerische Features werden die fehlenden Werte durch den Mittelwert ersetzt.
-        Die KielerWoche-Spalte wird mit False gefüllt und als boolescher Wert behandelt.
+    The CSV files are loaded with pandas.read_csv() and merged with merge() based on the date column.
+    The date column is converted to datetime format to extract time-based features.
+    Missing values are handled in different columns:
+        For numeric features, the missing values are replaced by the mean value.
+        The KielerWoche column is filled with False and treated as a Boolean value.
 
-Feature Engineering
 
-    Mehrere zeitbasierte Features werden durch die add_features()-Funktion erzeugt:
-        Jahr (Jahr), Monat (Monat), Wochentag (Wochentag), Kalenderwoche (Kalenderwoche), Tag im Jahr (Tag_im_Jahr).
-        Zyklische Merkmale wie Tag_im_Jahr_sin, Tag_im_Jahr_cos, Monat_sin, Monat_cos, Wochentag_sin, Wochentag_cos werden hinzugefügt, um saisonale Muster besser erfassen zu können.
+## Feature Engineering
 
-Modellvorbereitung
+    Several time-based features are created by the add_features() function:
+        Year (Jahr), Month (Monat), Weekday (Wochentag), Calendar Week (Kalenderwoche), Day in Year (Tag_im_Jahr).
+        Cyclical features such as day_in_year_sin, day_in_year_cos, month_sin, month_cos, weekday_sin, weekday_cos are added to better capture seasonal patterns.
 
-    Spalten für numerische Features: Hier werden eine Vielzahl von Features wie Wetterdaten, Feiertage, Preisindizes und regionale Variablen berücksichtigt.
-    Spalten für kategorische Features: Dazu gehören Wochentag, Wettercode und Warengruppe, die mit einem OneHotEncoder kodiert werden.
-    Spaltenumwandlung mit ColumnTransformer: Der ColumnTransformer wird verwendet, um verschiedene Vorverarbeitungsschritte für numerische und kategorische Features zu kombinieren:
-        Numerische Features: Werden imputationstechnisch mit dem Mittelwert und anschließend skaliert.
-        Kategorische Features: Werden mit einem OneHotEncoder in Dummy-Variablen umgewandelt.
 
-Verwendung
+## Model preparation
 
-    Daten einlesen und vorverarbeiten: Stellen Sie sicher, dass die CSV-Dateien vorhanden sind und den richtigen Pfad zu den Dateien im Code angeben. Führen Sie dann das Skript aus, um die Daten zu laden und vorzuverarbeiten.
+    Columns for numerical features: A variety of features such as weather data, public holidays, price indices and regional variables are taken into account here.
+    Columns for categorical features: These include day of the week, weather code and product group, which are coded with a OneHotEncoder.
+    Column conversion with ColumnTransformer: The ColumnTransformer is used to combine different pre-processing steps for numerical and categorical features:
+        Numerical features: Are imputed using the mean value and then scaled.
+        Categorical features: Are converted into dummy variables using a OneHotEncoder.
+
+
+## Usage
+
+    Read in and pre-process data: Make sure that the CSV files are available and specify the correct path to the files in the code. Then execute the script to load and pre-process the data.
+
