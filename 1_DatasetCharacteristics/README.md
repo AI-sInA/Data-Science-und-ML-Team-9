@@ -1,13 +1,50 @@
 # Dataset Characteristics
 
-0. Datenanalyse (Betreff Datei: team9_dataset_eval.ipynb)
+0. Datenanalyse und Visualisierung (Betreff Datei: "team9_dataset_eval.ipynb")
+
+Dieser Abschnitt beinhaltet Code zur explorativen Datenanalyse und Visualisierung der Verkaufsdaten mit verschiedenen Einflussfaktoren. 
+
+Datensatzübersicht
+Der Datensatz enthält 9.334 Einträge mit 55 Spalten und umfasst folgende Hauptkategorien:
+
+Zielgröße: Umsatz
+Variablen siehe Ordner "0.DataPreparation"
+
+Funktionalitäten
+Der Code führt folgende Analysen durch:
+
+Grundlegende Dateninspektion:
+
+df.info() - Überblick über Datentypen und fehlende Werte
+df.describe() - Statistische Zusammenfassung der numerischen Variablen
+df.head() - Anzeigen der ersten Zeilen des Datensatzes
 
 
+Visualisierung des Zielwerts:
+
+Histogramm der Umsatzverteilung mit Kernel-Density-Estimation (KDE)
 
 
+Korrelationsanalyse:
 
+Berechnung und Sortierung der Korrelationen zwischen Umsatz und allen anderen Variablen
 
-1. BETRACHTUNG DER BUNDESLÄNDER UND FERIEN (Betreff Datei: Ferien_D_Variable.ipynb)
+Haupterkenntnisse
+Basierend auf der Korrelationsanalyse haben folgende Faktoren den größten positiven Einfluss auf den Umsatz:
+
+Sommerferien in Schleswig-Holstein (0,23)
+Temperatur (0,22)
+Ferien in verschiedenen Bundesländern (0,16-0,19)
+Wochenenden (0,16)
+
+Negative Korrelationen bestehen mit:
+
+Tag im Jahr (Kosinus-Transformation) (-0,23)
+Monat (Kosinus-Transformation) (-0,21)
+Wochentag (Sinus-Transformation) (-0,14)
+Monat (Sinus-Transformation) (-0,13)
+
+1. BETRACHTUNG DER BUNDESLÄNDER UND FERIEN (Betreff Datei: "Ferien_D_Variable.ipynb")
 
 Umsatzanalyse in Abhängigkeit der Ferien pro Bundesland
 
