@@ -1,6 +1,6 @@
 # Dataset Characteristics
 
-0. siehe Ordner "0_DataPreparation"
+0. Datenanalyse (Betreff Datei: team9_dataset_eval.ipynb)
 
 
 
