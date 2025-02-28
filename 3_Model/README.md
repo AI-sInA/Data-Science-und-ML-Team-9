@@ -1,31 +1,57 @@
 # Model Definition and Evaluation
 
+## Overview
+
+This project involves defining and evaluating machine learning models for sales prediction. The steps include data preparation, feature engineering, model training, hyperparameter optimization, and model evaluation.
 
 ## Data Preparation and Preprocessing
 
-The data preparation and preprocessing steps include loading various datasets, merging them, and performing feature engineering. The datasets include sales data, weather data, holiday data, and more. The preprocessing steps involve converting date columns to datetime format, filling missing values, and adding new features such as year, month, weekday, and cyclic features.
+The data preparation and preprocessing steps include:
+1. Loading various datasets such as sales data, weather data, holiday data, and more.
+2. Merging the datasets.
+3. Performing feature engineering by converting date columns to datetime format, filling missing values, and adding new features such as year, month, weekday, and cyclic features.
 
 ## Feature Engineering
 
-Feature engineering is performed to create new features from the existing data. This includes extracting year, month, weekday, and other cyclic features from the date column. Additionally, features like weather code and holiday indicators are processed and added to the dataset.
+New features are created to capture temporal patterns and event-specific information:
+- Extracting year, month, weekday, and other cyclic features from the date column.
+- Processing features like weather code and holiday indicators.
 
 ## Data Splitting
 
-The data is split into training, validation, and test sets based on the date. The training set includes data up to 2016, the validation set includes data from 2017, and the test set includes data from 2018 onwards.
+The data is split into training, validation, and test sets based on the date:
+- Training set: Data up to 2016.
+- Validation set: Data from 2017.
+- Test set: Data from 2018 onwards.
 
 ## Data Transformation
 
-A `ColumnTransformer` is defined to preprocess numerical and categorical features. Numerical features are imputed and scaled, while categorical features are one-hot encoded. The transformed data is then used for training and evaluation.
+A `ColumnTransformer` is defined to preprocess numerical and categorical features:
+- Numerical features are imputed and scaled.
+- Categorical features are one-hot encoded.
 
 ## Model Training
 
 ### Neural Network Model
 
-A neural network model is defined using TensorFlow Keras. The model consists of multiple dense layers with ReLU activation, dropout layers for regularization, and a final linear layer for regression. The model is compiled with the Adam optimizer and mean squared error loss. The model is trained on the preprocessed training data and evaluated on the validation data.
+A neural network model is defined using TensorFlow Keras. The model consists of:
+- Multiple dense layers with ReLU activation.
+- Dropout layers for regularization.
+- A final linear layer for regression.
+
+The model is compiled with the Adam optimizer and mean squared error loss. It is trained on the preprocessed training data and evaluated on the validation data.
 
 ### Hyperparameter Optimization
 
-Hyperparameter optimization is performed using Optuna. The optimization process involves tuning the batch size, number of layers, number of units in each layer, activation functions, dropout rates, and learning rate. The best hyperparameters are selected based on the validation loss.
+Hyperparameter optimization is performed using Optuna. The optimization process involves tuning:
+- Batch size
+- Number of layers
+- Number of units in each layer
+- Activation functions
+- Dropout rates
+- Learning rate
+
+The best hyperparameters are selected based on the validation loss.
 
 ### Optimized Models
 

@@ -19,7 +19,7 @@ The following datasets are used in this project:
 
 ## Data Preprocessing
 
-The data is preprocessed by:
+The data preprocessing steps include:
 1. Converting date columns to datetime format.
 2. Adding new features such as year, month, weekday, and cyclic features (sine and cosine transformations).
 3. Handling missing values and categorical variables.
@@ -27,11 +27,11 @@ The data is preprocessed by:
 ## Feature Engineering
 
 New features are created to capture temporal patterns and event-specific information:
-- Year, month, weekday, and calendar week
-- Day of the year (sine and cosine transformations)
-- Month (sine and cosine transformations)
-- Weekday (sine and cosine transformations)
-- Boolean flag for weekends
+- Year, month, weekday, and calendar week.
+- Day of the year (sine and cosine transformations).
+- Month (sine and cosine transformations).
+- Weekday (sine and cosine transformations).
+- Boolean flag for weekends.
 
 ## Model Training
 
@@ -67,8 +67,3 @@ To run the project, execute the Jupyter notebook `team9_baseline.ipynb` which co
 Install the required packages using:
 ```bash
 pip install pandas numpy scikit-learn seaborn matplotlib
-```
-
-## License
-
-This project is licensed under the MIT License.
