@@ -36,7 +36,3 @@ The analysis includes:
 - Visualizing the distribution of the target variable (sales).
 - Calculating the correlation of sales with other features.
 - Plotting relationships between sales and key features.
-
-## Conclusion
-
-This project provides a comprehensive analysis of the factors affecting sales by merging and preprocessing various datasets. The insights gained from the analysis can help in making informed business decisions.

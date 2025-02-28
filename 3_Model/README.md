@@ -68,11 +68,3 @@ The training and validation loss for each model is plotted to visualize the trai
 ## Submission
 
 The final model is used to make predictions on the submission dataset. The predictions are saved to a CSV file for submission.
-
-## Code Structure
-
-The code is structured into several functions and sections for data loading, preprocessing, feature engineering, model training, hyperparameter optimization, and evaluation. This modular approach ensures that the code is organized and easy to understand.
-
-## Conclusion
-
-The notebook demonstrates a complete workflow for building and evaluating machine learning models for sales prediction. The use of feature engineering, data preprocessing, neural networks, and hyperparameter optimization ensures that the models are well-tuned and provide accurate predictions.
