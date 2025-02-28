@@ -18,8 +18,8 @@
 
 BETRACHTUNG DER BUNDESLÄNDER UND FERIEN (Betreff Datei: Ferien_D_Variable.ipynb)
 
-README: Umsatzanalyse in Abhängigkeit der Ferien pro Bundesland
-Projektbeschreibung
+Umsatzanalyse in Abhängigkeit der Ferien pro Bundesland
+Beschreibung
 
 In diesem Abschnitt wird der Einfluss von Ferien und Schultagen auf den Umsatz in verschiedenen deutschen Bundesländern untersucht. Die Analyse basiert auf täglichen Umsatzdaten, die mit Informationen über Feiertage, Brückentage und Schulferien kombiniert werden. Ziel der Analyse ist es, die Umsatzunterschiede während Ferienzeiten im Vergleich zu den regulären Schultagen zu identifizieren und statistisch zu validieren.
 Daten
@@ -44,7 +44,6 @@ Codeübersicht
 
     Daten einlesen und zusammenführen:
         Beide CSV-Dateien werden eingelesen und anhand der gemeinsamen Datum-Spalte zusammengeführt.
-        Das Datum wird in das Datetime-Format konvertiert, um die Zeitreihenanalyse zu erleichtern.
 
     Datenaggregation:
         Die Umsätze werden nach Datum aggregiert.
@@ -108,3 +107,6 @@ Für die Ausführung des Projekts werden folgende Python-Pakete benötigt:
     Pandas: Für die Datenmanipulation und Aggregation.
     Matplotlib: Für die Visualisierung der Ergebnisse.
     Scipy: Für statistische Tests und Berechnungen der Konfidenzintervalle.
+
+
+
