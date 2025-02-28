@@ -34,15 +34,21 @@ Haupterkenntnisse
 Basierend auf der Korrelationsanalyse haben folgende Faktoren den größten positiven Einfluss auf den Umsatz:
 
 Sommerferien in Schleswig-Holstein (0,23)
+
 Temperatur (0,22)
+
 Ferien in verschiedenen Bundesländern (0,16-0,19)
+
 Wochenenden (0,16)
 
 Negative Korrelationen bestehen mit:
 
 Tag im Jahr (Kosinus-Transformation) (-0,23)
+
 Monat (Kosinus-Transformation) (-0,21)
+
 Wochentag (Sinus-Transformation) (-0,14)
+
 Monat (Sinus-Transformation) (-0,13)
 
 1. BETRACHTUNG DER BUNDESLÄNDER UND FERIEN (Betreff Datei: "Ferien_D_Variable.ipynb")
